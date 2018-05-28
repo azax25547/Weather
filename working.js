@@ -6,7 +6,7 @@ var api = "https://api.openweathermap.org/data/2.5/weather?"
 
 
 window.onload = function(){
-    //alert("You should turn on Location service on your device to get the Weather details else you cant find nothing");
+    alert("You should turn on Location service on your device to get the Weather details else you cant find nothing");
       /*presentation of ther date*/
     generateDate(); 
     /*Getting Geolocation Data*/     
