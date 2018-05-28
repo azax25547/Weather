@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Details</title>
+   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="assests/if_cloud_1055089.png">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="py-4" align="center" style="font-family: 'Merriweather', serif; font-weight: bold; opacity: 0.7; ">Weather App</h1>
+  
+    <!-- Converter Buttons -->
+    <div class="conv">
+            <div class="button-groups">
+                <button type="button" id="cel" class="btn btn-primary">&#8451;</button>
+                <button type="button" id="far" class="btn btn-primary">&#8457;</button>
+                
+            </div>
+        </div>
+    <!-- for Time Show -->
+    <div class="time w3-animate-opacity"></div>
+
+<!--Manual Area Search-->
+<div class="container">
+    <h4 class="w3-center lead my-2">Search Manually by City Name</h4>
+        <div class="row">
+        <input class="w3-input inp" id="cityName" type="text"  placeholder="Enter City Name">
+        <button class="w3-btn w3-blue" id="btn"><i class="fa fa-search"></i></button>
+    </div>
+</div>
+       
+  <!--Reload Button-->
+ 
+   
+   <!--Weather Data Display-->
+            <div class="weather-data w3-center" style="display: block;">
+                    <div class="city w-data"></div>
+                    <div class="temp w-data"></div>
+                    <div class="humidity w-data"></div>
+                    <div class="weather-description w-data"></div>
+                    <br>
+                    <img class="img"  alt="">
+                </div>
+          <button class="btn btn-dark" style="opacity: 0.52; display: none; border-radius:20px;" id="reload"><img src="https://loading.io/spinners/reload/lg.ajax-syncing-loading-icon.gif" alt="" width="56" height="56">
+
+          </button>   
+   
+  
+   <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="working.js"></script>
+</body>
+</html>
