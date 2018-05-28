@@ -51,14 +51,13 @@ function getWeatherCel(){
    
     $.ajax({
         url: total,
-        dataType:"jsonp",
         success: function(result){
            console.log(result);
            $('.city').text("City: "+result.name);
            $('.temp').text("Temperature: "+result.main.temp +"C");
            $('.humidity').text("Humidity: " +result.main.humidity);
            $('.weather-description').text(result.weather[0].description);
-           $(".img").attr("src","http://openweathermap.org/img/w/"+result.weather[0].icon+".png");
+           $(".img").attr("src","https://openweathermap.org/img/w/"+result.weather[0].icon+".png");
         },
         error: function(err){
             alert("Either you have not turned on location services or your network connection is poor");
@@ -78,7 +77,7 @@ function getWeatherFar(){
            $('.temp').text("Temperature: "+result.main.temp +"F");
            $('.humidity').text("Humidity: " +result.main.humidity);
            $('.weather-description').text(result.weather[0].description);
-           $(".img").attr("src","http://openweathermap.org/img/w/"+result.weather[0].icon+".png");
+           $(".img").attr("src","https://openweathermap.org/img/w/"+result.weather[0].icon+".png");
         },
         error: function(err){
             alert("Either you have not turned on location services or your network connection is poor");
@@ -128,7 +127,7 @@ function getWeatherManual(){
            $('.temp').text("Temperature: "+result.main.temp +"C");
            $('.humidity').text("Humidity: " +result.main.humidity);
            $('.weather-description').text(result.weather[0].description);
-          $(".img").attr("src","http://openweathermap.org/img/w/"+result.weather[0].icon+".png");
+          $(".img").attr("src","https://openweathermap.org/img/w/"+result.weather[0].icon+".png");
         },
         error: function(err){
            
