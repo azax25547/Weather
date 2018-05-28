@@ -2,7 +2,7 @@
 var latData;
 var longData;
 var total;
-var api = "http://api.openweathermap.org/data/2.5/weather?"
+var api = "https://api.openweathermap.org/data/2.5/weather?"
 
 
 window.onload = function(){
@@ -51,6 +51,7 @@ function getWeatherCel(){
    
     $.ajax({
         url: total,
+        dataType:"jsonp",
         success: function(result){
            console.log(result);
            $('.city').text("City: "+result.name);
