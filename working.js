@@ -105,7 +105,7 @@ window.addEventListener("keydown",function(e){
 function showError(err){
     switch(error.code) {
         case error.PERMISSION_DENIED:
-            alert("User denied the request for Geolocation.")
+            alert("User for Geolocation.")
             break;
         case error.POSITION_UNAVAILABLE:
             alert("Location information is unavailable.")
